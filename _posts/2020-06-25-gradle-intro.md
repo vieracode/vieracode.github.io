@@ -12,27 +12,27 @@ Gradle es una herramienta de construcción automática, generalmente usada para 
 
 1. Como pre-requisito para la versión actual de Gradle (6.5) es necesario contar con Java JDK o JRE versión 8 o superior. Esto lo puedes validar con el comando `java -version`
 
+{% highlight bash %}
+{% raw %}
+#java -version
+java version "1.8.0_221"
+Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
+{% endraw %}
+{% endhighlight %}
+
 2. Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
 
 3. Extraer el archivo zip, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos Gradle.
 
 4. Agregar **GRADLE_HOME/bin** a la variable de entorno `PATH`
 
->Nota: Para validar la correcta instalación puedes ejecutar el comando `gradle -v` el cual debería mostrar algo parecido a esto:
+>Nota: Para validar la correcta instalación puedes ejecutar el comando `gradle -v`
 {: .note}
 
 {% highlight bash %}
 {% raw %}
-Welcome to Gradle 6.5!
-
-Here are the highlights of this release:
- - Experimental file-system watching
- - Improved version ordering
- - New samples
-
-For more details see https://docs.gradle.org/6.5/release-notes.html
-
-
+#gradle -v                                                                                            
 ------------------------------------------------------------
 Gradle 6.5
 ------------------------------------------------------------
