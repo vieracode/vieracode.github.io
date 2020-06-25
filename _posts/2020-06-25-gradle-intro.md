@@ -23,7 +23,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 
 2. Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
 
-3. Extraer el archivo zip, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos Gradle.
+3. Extraer el archivo **zip**, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos **Gradle.**
 
 4. Agregar **GRADLE_HOME/bin** a la variable de entorno `PATH`
 
