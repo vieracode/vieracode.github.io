@@ -10,7 +10,7 @@ Gradle es una herramienta de construcción automática, generalmente usada para 
 
 ## Instalación
 
-1. Como pre-requisito para la versión actual de Gradle (6.5) es necesario contar con Java JDK o JRE versión 8 o superior. Esto lo puedes validar con el comando `java -version`
+0. Como pre-requisito para la versión actual de Gradle (6.5) es necesario contar con Java JDK o JRE versión 8 o superior. Esto lo puedes validar con el comando `java -version`
 
 {% highlight bash %}
 {% raw %}
@@ -21,11 +21,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 {% endraw %}
 {% endhighlight %}
 
-2. Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
+1. Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
 
-3. Extraer el archivo **zip**, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos **Gradle.**
+2. Extraer el archivo **zip**, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos **Gradle.**
 
-4. Agregar **%GRADLE_HOME%/bin** a la variable de entorno `PATH`
+3. Agregar **%GRADLE_HOME%/bin** a la variable de entorno `PATH`
 
 >Nota: Para validar la correcta instalación puedes ejecutar el comando `gradle -v`
 {: .note}
@@ -47,3 +47,20 @@ JVM:          1.8.0_221 (Oracle Corporation 25.221-b11)
 OS:           Windows 10 10.0 amd64
 {% endraw %}
 {% endhighlight %}
+
+
+## Escribiendo el ejemplo
+
+Crear un archivo con el nombre build.gradle y escribir el siguiente contenido:
+
+{% highlight javascript %}
+{% raw %}
+task helloWorld {
+   doLast {
+      println '¡Hola mundo cruel!'
+   }
+}
+{% endraw %}
+{% endhighlight %}
+
+La sintaxis del contenido se escribe en formato Gradle's DSL (self descriptive language). 
