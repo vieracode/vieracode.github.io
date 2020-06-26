@@ -51,16 +51,32 @@ OS:           Windows 10 10.0 amd64
 
 ## Escribiendo el ejemplo
 
-Crear un archivo con el nombre build.gradle y escribir el siguiente contenido:
+Crear un archivo con el nombre **build.gradle** y escribir el siguiente contenido:
 
 {% highlight javascript %}
 {% raw %}
-task helloWorld {
+task holaMundo {
    doLast {
-      println '¡Hola mundo cruel!'
+      println 'Bienvenido a Viera Code!'
    }
 }
 {% endraw %}
 {% endhighlight %}
 
-La sintaxis del contenido se escribe en formato Gradle's DSL (self descriptive language). 
+La sintaxis del contenido se escribe en formato **Gradle's DSL** (self descriptive language). 
+
+
+## Ejecutando el script Gradle
+
+Para correr el script es necesario ejecutar el comando `gradle` y pasarle el nombre de la tarea:
+
+{% highlight bash %}
+{% raw %}
+#gradle -q holaMundo
+Bienvenido a Viera Code!
+{% endraw %}
+{% endhighlight %}
+
+Con la opción `-q` (quiet), le indicas a Gradle que solo muestre la salida de la tarea.
+
+En próximos ejemplos mostrare características mas avanzadas de Gradle.
