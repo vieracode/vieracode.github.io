@@ -23,7 +23,7 @@ dependencies {
 {% endhighlight %}
 2. Spring boot auto configuración
 
-La auto configuración en Spring Boot se habilita con la anotación `@EnableAutoConfiguration` , la cual escanea el classpath, busca las librerias y realiza la mejor configuración para ellas, finalmente habilitas los respectivos beans dentro del contexto. Puedes revisar la lista completa [aquí] (https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/api/)
+La auto configuración en Spring Boot se habilita con la anotación `@EnableAutoConfiguration` , la cual escanea el classpath, busca las librerias y realiza la mejor configuración para ellas, finalmente habilitas los respectivos beans dentro del contexto. Puedes revisar la lista completa [aquí](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/api/)
 
 >Nota: Auto-configuración es siempre aplicado después de los bean registrados por el usuario. 
 3. Servidor embebido 
