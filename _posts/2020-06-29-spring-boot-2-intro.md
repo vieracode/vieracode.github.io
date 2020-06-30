@@ -1,14 +1,25 @@
 ---
 layout: post
 title: Spring Boot 2
-date:   2020-06-29 19:15
+date: 2020-06-29 19:15
 tags: spring
 description: Introducción a Spring Boot 2
+toc: true
 ---
+
+{% highlight md %}
+{% raw %}
+layout: post
+title: Spring Boot 2
+date: 2020-06-29 19:15
+description: Introducción a Spring Boot 2
+toc: true
+{% endraw %}
+{% endhighlight %}
 
 Spring Boot es un modulo de Spring Framework, provee un **RAD** (Rapid Application Development). El cuál basa su configuración en starter templates.
 
-1. ¿Que son los starter template?
+# ¿Que son los starter template?
 
 Son un conjunto de templates que contienen todas las dependencias necesarias para una funcionalidad en concreto. Por ejemplo si necesitas crear un proyecto web básico es suficiente con agregar la dependencia `spring-boot-starter-web`, la cual incluye todo lo necesario para empezar, ademas te evitas arreglar conflictos entre las diferentes versiones de las dependencias.
 
@@ -21,17 +32,20 @@ dependencies {
 }
 {% endraw %}
 {% endhighlight %}
-2. Spring boot auto configuración
+
+# Spring boot auto configuración
 
 La auto configuración en Spring Boot se habilita con la anotación `@EnableAutoConfiguration` , la cual escanea el classpath, busca las librerias y realiza la mejor configuración para ellas, finalmente habilitas los respectivos beans dentro del contexto. Puedes revisar la lista completa [aquí](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/api/)
 
 >Nota: Auto-configuración es siempre aplicado después de los bean registrados por el usuario. 
-3. Servidor embebido 
+
+# Servidor embebido 
 
 Spring boot incluye el servidor de aplicaciones [Tomcat](http://tomcat.apache.org). Ésto significa que puedes correr tu aplicación desde la linea de comandos sin la necesidad de configurar una infraestructura compleja.
 
 Tu puedes excluir Tomcat e incluir algun otro servidor si gustas. También puedes excluir por completo el uso de un servidor embebido y desplegarlo de manera tradicional en un archivo war.
-4. Configuración de arranque.
+
+# Configuración de arranque
 
 Para correr la aplicación es necesario usar la anotación `@SpringBootApplication`. Esta anotación es equivalente a `@Configuration`, `@EnableAutoConfiguration`, y `@ComponentScan` juntas.
 Esta anotación inicia el escaneo y configuración de todas las clases, tomando en cuenta el archivo de propiedades **/resources/application.properties**

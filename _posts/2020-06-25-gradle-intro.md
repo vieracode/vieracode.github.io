@@ -1,16 +1,27 @@
 ---
 layout: post
-title: Gradle
-date:   2020-06-25 02:02
+title: Gradle introducción
+date: 2020-06-25 02:02
 tags: build tools
 description: Instalación y ejemplo
+toc: true
 ---
+
+{% highlight md %}
+{% raw %}
+layout: post
+title: Gradle introducción
+date: 2020-06-25 02:02
+description: Instalación y ejemplo
+toc: true
+{% endraw %}
+{% endhighlight %}
 
 Gradle es una herramienta de construcción automática, generalmente usada para construir proyectos Java y definir sus dependencias. En este tutorial aprenderemos a instalar Gradle, realizaremos un sencillo ejemplo y lo ejecutaremos para validar su funcionamiento.
 
-## Instalación
+# Instalación
 
-0. Como pre-requisito para la versión actual de Gradle (6.5) es necesario contar con Java JDK o JRE versión 8 o superior. Esto lo puedes validar con el comando `java -version`
+## Como pre-requisito para la versión actual de Gradle (6.5) es necesario contar con Java JDK o JRE versión 8 o superior. Esto lo puedes validar con el comando `java -version`
 
 {% highlight bash %}
 {% raw %}
@@ -21,11 +32,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
 {% endraw %}
 {% endhighlight %}
 
-1. Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
+## Descargar la distribución directamente de la pagina oficial de [Gradle](https://gradle.org/releases/). La distribución incluirá: source, binarios, documentación y ejemplos.
 
-2. Extraer el archivo **zip**, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos **Gradle.**
+## Extraer el archivo **zip**, colocarlo dentro de una ruta especifica, setear la variable de entorno `GRADLE_HOME` apuntando a la ruta donde colocamos **Gradle.**
 
-3. Agregar **%GRADLE_HOME%/bin** a la variable de entorno `PATH`
+## Agregar **%GRADLE_HOME%/bin** a la variable de entorno `PATH`
 
 >Nota: Para validar la correcta instalación puedes ejecutar el comando `gradle -v`
 {: .note}
@@ -49,7 +60,7 @@ OS:           Windows 10 10.0 amd64
 {% endhighlight %}
 
 
-## Escribiendo el ejemplo
+# Escribiendo el ejemplo
 
 Crear un archivo con el nombre **build.gradle** y escribir el siguiente contenido:
 
@@ -66,7 +77,7 @@ task holaMundo {
 La sintaxis del contenido se escribe en formato **Gradle's DSL** (self descriptive language). 
 
 
-## Ejecutando el script Gradle
+# Ejecutando el script Gradle
 
 Para correr el script es necesario ejecutar el comando `gradle` y pasarle el nombre de la tarea:
 
