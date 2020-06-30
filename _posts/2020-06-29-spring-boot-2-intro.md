@@ -21,22 +21,16 @@ dependencies {
 }
 {% endraw %}
 {% endhighlight %}
-
-
 2. Spring boot auto configuración
 
-La auto configuración en Spring Boot se habilita con la anotación `@EnableAutoConfiguration` , la cual escanea el classpath, busca las librerias y realiza la mejor configuración para ellas, finalmente habilitas los respectivos beans dentro del contexto.
+La auto configuración en Spring Boot se habilita con la anotación `@EnableAutoConfiguration` , la cual escanea el classpath, busca las librerias y realiza la mejor configuración para ellas, finalmente habilitas los respectivos beans dentro del contexto. Puedes revisar la lista completa [aquí] (https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/api/)
 
->Nota: Auto-configuración es siempre aplicado después de los bean registrados por el usuario. Puedes revisar la lista completa [aquí] (https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/api/)
-
-
+>Nota: Auto-configuración es siempre aplicado después de los bean registrados por el usuario. 
 3. Servidor embebido 
 
 Spring boot incluye el servidor de aplicaciones [Tomcat](http://tomcat.apache.org). Ésto significa que puedes correr tu aplicación desde la linea de comandos sin la necesidad de configurar una infraestructura compleja.
 
 Tu puedes excluir Tomcat e incluir algun otro servidor si gustas. También puedes excluir por completo el uso de un servidor embebido y desplegarlo de manera tradicional en un archivo war.
-
-
 4. Configuración de arranque.
 
 Para correr la aplicación es necesario usar la anotación `@SpringBootApplication`. Esta anotación es equivalente a `@Configuration`, `@EnableAutoConfiguration`, y `@ComponentScan` juntas.
